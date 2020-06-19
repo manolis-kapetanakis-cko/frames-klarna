@@ -1,0 +1,17 @@
+{
+  "name": "frames_node",
+  "version": "1.0.0",
+  "description": "Send payment request with Node",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon nodeAPI.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4"
+  }
+}

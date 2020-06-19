@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checkout Frames v2: Single Frame</title>
+        <link rel="stylesheet" href="/normalize.css">
+        <link rel="stylesheet" href="/style.css">
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div class='paymentwrapper' value>
+            <form id="payment-form" method="POST"
+                action="https://merchant.com/charge-card">
+                <div class="one-liner">
+                    <div class="card-frame"></div>
+                    <button id="pay-button" disabled>
+                        PAY GBP 24.99
+                    </button>
+                </div>
+                <p class="error-message"></p>
+                <p class="success-payment-message"></p>
+            </form>
+            <!-- <button onclick="createKlarnaSession()">Pay with Klarna</button> -->
+            <div id="klarna_container"></div>
+            <button class="btn button-primary" onclick="klarnaAuth()">Pay with
+                Klarna</button>
+        </div>
+
+        <script src="callKlarna.js"></script>
+        <script src="https://x.klarnacdn.net/kp/lib/v1/api.js" async></script>
+        <script src="https://cdn.checkout.com/js/framesv2.min.js"></script>
+        <script src="app.js"></script>
+
+    </body>
+
+</html>
